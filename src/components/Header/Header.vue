@@ -2,13 +2,13 @@
 <template>
   <div class="bg-white">
     <div class="container h-[70px]">
-      <nav class="flex justify-between items-center text-[15px]">
+      <nav class="flex justify-between items-center text-[15px] font-[Roboto] ">
         <div class="py-[10px]">
           <img src="../../assets/icons/Logo.svg" alt="logo" />
         </div>
         <ul class="flex justify-between w-[30%] text-[#545360]">
           <li>
-            <router-link to="/"> Comport </router-link>
+            <router-link to="/"> Comfort </router-link>
           </li>
           <li>
             <router-link to="/about">About us</router-link>
