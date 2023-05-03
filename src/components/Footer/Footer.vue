@@ -86,7 +86,7 @@
         </div>
       </div>
     </div>
-    <div class="bg-[#40B75B] text-white px-2 sm:px-4 lg:px-4">
+    <div class="bg-[#40B75B] min-h-[54px] flex justify-center items-center text-white px-2 sm:px-4 lg:px-4">
       <div
         class="container  text-center lg:p-0 p-4 flex justify-between lg:flex-row flex-col items-center gap-6 lg:gap-0"
       >
