@@ -1,11 +1,16 @@
 <script setup>
-import Comfortcard from "../Card/Comfortcard.vue";
+import Plus from "../Icons/Plus.vue";
+import Circle from "../Icons/Circle.vue";
 </script>
 <template>
-  <div class="mt-28 bg-white font-[Roboto]">
-    <div class="flex flex-col justify-center items-center gap-y-5 container">
-      <h1 class="text-[34px] text-[#32313E] font-bold">Our advantages</h1>
-      <div class="w-full h-[727px] flex justify-between ml-40">
+  <div class="bg-white font-[Roboto]">
+    <div class="flex flex-col justify-center items-center container">
+      <div class="relative">
+        <Plus class="top-0 -right-10 w-6 h-6" />
+        <h1 class="text-[34px] text-[#32313E] font-bold">Our advantages</h1>
+      </div>
+      <!--  -->
+      <div class="w-full h-[727px] flex justify-around">
         <div class="relative h-full w-1/2">
           <div
             class="absolute w-[800px] secondphone h-[600px] -right-60 top-40"
@@ -79,7 +84,7 @@ import Comfortcard from "../Card/Comfortcard.vue";
         </div>
       </div>
     </div>
-    <!--  -->
+    <!--  cashback -->
     <div class="h-[727px] w-full bg-[#E9F3F2] relative overflow-hidden">
       <img
         class="absolute top-0 left-0"
@@ -87,12 +92,12 @@ import Comfortcard from "../Card/Comfortcard.vue";
         alt="img"
       />
       <img
-        class="absolute -bottom-20 -right-20 w-[600px] h-[600px]"
+        class="absolute top-20 -right-20 w-[800px] h-[800px]"
         src="../../assets/images/freepik--background-complete--inject-12.png"
         alt="img"
       />
 
-      <div class="w-full h-full container flex justify-between items-center">
+      <div class="w-full h-full container flex items-center">
         <div class="h-full flex items-center w-1/2">
           <div class="h-2/3 w-2/3 flex flex-col justify-between">
             <h1 class="text-[#32313E] text-[28px] font-bold">Buy online</h1>
@@ -145,8 +150,14 @@ import Comfortcard from "../Card/Comfortcard.vue";
             </ul>
           </div>
         </div>
-        <div class="w-1/2 relative z-10">
+        <div class="relative z-10">
+          <Plus class="top-10 left-40 w-3 h-3" />
+          <Plus class="top-20 left-20 w-6 h-6" />
+          <Circle class="w-5 h-5 top-28 left-28" />
           <img src="../../assets/images/iPhone 13 Pro.png" alt="" />
+          <Circle class="bottom-16 right-40 w-3 h-3" />
+          <Circle class="bottom-20 right-20 w-6 h-6" />
+          <Circle class="w-5 h-5 bottom-10 right-28" />
         </div>
       </div>
     </div>
@@ -155,7 +166,8 @@ import Comfortcard from "../Card/Comfortcard.vue";
       <div class="flex items-center h-full container justify-between">
         <!--  -->
         <div class="w-[45%] h-full relative">
-          <div class="relative h-full w-full newbike">
+          <div class="relative z-10 h-full w-full newbike">
+            <Plus class="top-60 right-20 w-6 h-6" />
             <div class="absolute left-[10%] top-[14%]">
               <img src="../../assets/images/Card.png" alt="" />
             </div>
@@ -166,9 +178,9 @@ import Comfortcard from "../Card/Comfortcard.vue";
               <img src="../../assets/images/Frame 8.png" alt="" />
             </div>
           </div>
-          <div>
+          <div class="bike2">
             <img
-              class="absolute bottom-0 left-10"
+              class="absolute bottom-0 z-10 left-10"
               src="../../assets/images/Kerfin7_NEA_2375 1.png"
               alt="img"
             />
@@ -309,7 +321,7 @@ import Comfortcard from "../Card/Comfortcard.vue";
       </div>
     </div>
     <!--  -->
-    <div class="h-[727px] bg-[#E9F3F2] w-full">
+    <div class="h-[627px] bg-[#E9F3F2] w-full">
       <div class="container h-full w-full flex justify-between items-center">
         <div class="flex flex-col justify-between h-1/2 w-1/3">
           <h1 class="text-[#32313E] text-[34px] font-bold">
@@ -319,7 +331,7 @@ import Comfortcard from "../Card/Comfortcard.vue";
             Мобильное приложение Pharm Live вы можете заказать необходимое
             лекарство, не выходя из дома!
           </p>
-          <div class="h-[30%]">
+          <div class="h-[30%] flex flex-col gap-4">
             <p class="text-[#545360] text-[16px]">
               Скачать через Play Market или App Store!
             </p>
@@ -345,15 +357,20 @@ import Comfortcard from "../Card/Comfortcard.vue";
             </div>
           </div>
         </div>
-        <div class="w-[60%] h-full relative">
+        <div class="w-[50%] h-full relative">
+          <Plus class="top-40 right-40 w-6 h-6" />
+          <Plus class="top-60 -left-20 w-6 h-6" />
+          <Plus class="top-10 left-60 w-3 h-3" />
+          <Plus class="top-96 -left-10 w-3 h-3" />
           <img
-            class="w-full h-[600px] absolute bottom-0"
+            class="w-full h-[500px] absolute bottom-0"
             src="../../assets/images/iPhone 12 Pro (Wooden Hands).png"
             alt=""
           />
         </div>
       </div>
     </div>
+    <!--  -->
   </div>
 </template>
 <style>
@@ -406,6 +423,20 @@ import Comfortcard from "../Card/Comfortcard.vue";
   left: 0;
   width: 60%;
   height: 80%;
+  background: #00ff7f;
+  opacity: 0.15;
+  filter: blur(60px);
+  z-index: 0;
+}
+
+.bike2::before {
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  bottom: 0px;
+  left: 20px;
+  width: 40%;
+  height: 40%;
   background: #00ff7f;
   opacity: 0.15;
   filter: blur(60px);

@@ -1,7 +1,7 @@
 <script setup>
-import Comfort from "../components/Comfort/Comfort.vue";
+import Advantages from "../components/Advantages/Advantages.vue";
 </script>
 <template>
-  <Comfort />
+  <Advantages />
 </template>
 <style></style>

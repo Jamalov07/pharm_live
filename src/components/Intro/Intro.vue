@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-  <div class="intro h-[630px] w-full relative font-[Roboto] mb-24">
+  <div class="intro h-[630px] w-full relative font-[Roboto] mb-40">
     <div class="absol w-[100%] absolute top-0 h-[100%]"></div>
     <div class="relative h-full z-10 container flex justify-start items-center">
       <div class="flex flex-col gap-4 w-2/5">

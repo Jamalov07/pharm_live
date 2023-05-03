@@ -8,7 +8,7 @@
         </div>
         <ul class="flex justify-between w-[30%] text-[#545360]">
           <li>
-            <router-link to="/"> Comfort </router-link>
+            <router-link to="/"> Advantages </router-link>
           </li>
           <li>
             <router-link to="/about">About us</router-link>
