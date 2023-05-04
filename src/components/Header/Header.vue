@@ -4,7 +4,7 @@ const { t, locale } = useI18n({ useScope: "global" });
 import { useI18n } from "vue-i18n";
 
 let isMenuOpen = ref(false);
-const select = ref("" || localStorage.getItem("lang"));
+const select = ref("" || localStorage.getItem("lang") || 'UZB');
 function toggleModal() {
   isMenuOpen.value = !isMenuOpen.value;
 }
