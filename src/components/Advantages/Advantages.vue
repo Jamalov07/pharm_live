@@ -412,7 +412,7 @@ import Circle from "../Icons/Circle.vue";
 
           <img
             class="w-full h-auto lg:h-[500px] absolute bottom-0"
-            src="../../assets/images/iPhone12Pro(Wooden Hands).png"
+            src="../../assets/images/iPhone12Pro(WoodenHands).png"
             alt=""
           />
         </div>
