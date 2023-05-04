@@ -18,7 +18,7 @@ import Map from "../components/Map/Map.vue";
           <div class="rounded-[16px] boxshadow p-5 bg-[#40B75B]">
             <img class="w-5 h-5" src="../assets/icons/location.svg" alt="img" />
           </div>
-          <div class="flex flex-col gap-1 justify-start">
+          <div class="flex flex-col gap-1 justify-start items-center lg:items-start">
             <h1>Address</h1>
             <p>105A Buyuk Ipak Yo'li, Tashkent</p>
           </div>
@@ -28,7 +28,7 @@ import Map from "../components/Map/Map.vue";
           <div class="rounded-[16px] boxshadow p-5 bg-[#40B75B]">
             <img class="w-5 h-5" src="../assets/icons/location.svg" alt="img" />
           </div>
-          <div class="flex flex-col gap-1 justify-start">
+          <div class="flex flex-col gap-1 justify-start items-center lg:items-start">
             <h1>Address</h1>
             <p>105A Buyuk Ipak Yo'li, Tashkent</p>
           </div>
@@ -37,7 +37,7 @@ import Map from "../components/Map/Map.vue";
           <div class="rounded-[16px] boxshadow p-5 bg-[#40B75B]">
             <img class="w-5 h-5" src="../assets/icons/location.svg" alt="img" />
           </div>
-          <div class="flex flex-col gap-1 justify-start">
+          <div class="flex flex-col gap-1 justify-start items-center lg:items-start">
             <h1>Address</h1>
             <p>105A Buyuk Ipak Yo'li, Tashkent</p>
           </div>

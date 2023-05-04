@@ -1,3 +1,5 @@
 <script setup></script>
-<template>About Page</template>
+<template>
+  <div class="text-center font-[Roboto] text-[26px] bg-lime-400 shadow-md">About us ...</div>
+</template>
 <style></style>

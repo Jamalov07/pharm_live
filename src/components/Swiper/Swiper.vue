@@ -1,13 +1,18 @@
 <template>
   <swiper
+    :space-between="20"
+    :cssMode="true"
+    :mousewheel="true"
+    :keyboard="true"
     :slidesPerView="5"
-    :spaceBetween="30"
+    :spaceBetween="0"
     :centeredSlides="true"
     :navigation="true"
     :pagination="{
       clickable: true,
     }"
     :modules="modules"
+    :breakpoints="swiperOptions.breakpoints"
     class="swiper mySwiper mt-10 mb-4"
   >
     <swiper-slide>
@@ -24,7 +29,7 @@
             amet risus iaculis tincidunt. Libero vitae euismod sit ultricies
             turpis proin risus eget.
           </p>
-          <div class="flex flex-col gap-2">
+          <div class="flex flex-col h-[30%]">
             <h1 class="text-[#40B75B] text-[22px]">Ahror Yusupov</h1>
             <p class="text-[#98999D] text-[21pxa]">CEO Apple</p>
           </div>
@@ -45,7 +50,7 @@
             amet risus iaculis tincidunt. Libero vitae euismod sit ultricies
             turpis proin risus eget.
           </p>
-          <div class="flex flex-col gap-2">
+          <div class="flex flex-col h-[30%]">
             <h1 class="text-[#40B75B] text-[22px]">Ahror Yusupov</h1>
             <p class="text-[#98999D] text-[21pxa]">CEO Apple</p>
           </div>
@@ -66,7 +71,7 @@
             amet risus iaculis tincidunt. Libero vitae euismod sit ultricies
             turpis proin risus eget.
           </p>
-          <div class="flex flex-col gap-2">
+          <div class="flex flex-col h-[30%]">
             <h1 class="text-[#40B75B] text-[22px]">Ahror Yusupov</h1>
             <p class="text-[#98999D] text-[21pxa]">CEO Apple</p>
           </div>
@@ -87,7 +92,7 @@
             amet risus iaculis tincidunt. Libero vitae euismod sit ultricies
             turpis proin risus eget.
           </p>
-          <div class="flex flex-col gap-2">
+          <div class="flex flex-col h-[30%]">
             <h1 class="text-[#40B75B] text-[22px]">Ahror Yusupov</h1>
             <p class="text-[#98999D] text-[21pxa]">CEO Apple</p>
           </div>
@@ -108,7 +113,7 @@
             amet risus iaculis tincidunt. Libero vitae euismod sit ultricies
             turpis proin risus eget.
           </p>
-          <div class="flex flex-col gap-2">
+          <div class="flex flex-col h-[30%]">
             <h1 class="text-[#40B75B] text-[22px]">Ahror Yusupov</h1>
             <p class="text-[#98999D] text-[21pxa]">CEO Apple</p>
           </div>
@@ -129,7 +134,7 @@
             amet risus iaculis tincidunt. Libero vitae euismod sit ultricies
             turpis proin risus eget.
           </p>
-          <div class="flex flex-col gap-2">
+          <div class="flex flex-col h-[30%]">
             <h1 class="text-[#40B75B] text-[22px]">Ahror Yusupov</h1>
             <p class="text-[#98999D] text-[21pxa]">CEO Apple</p>
           </div>
@@ -150,28 +155,7 @@
             amet risus iaculis tincidunt. Libero vitae euismod sit ultricies
             turpis proin risus eget.
           </p>
-          <div class="flex flex-col gap-2">
-            <h1 class="text-[#40B75B] text-[22px]">Ahror Yusupov</h1>
-            <p class="text-[#98999D] text-[21pxa]">CEO Apple</p>
-          </div>
-        </div>
-      </div>
-    </swiper-slide>
-    <swiper-slide>
-      <div class="flex h-full flex-col justify-between items-center p-2">
-        <img
-          src="../../assets/images/Ellipse 42 (1).png"
-          class="p-1 rounded-full"
-          alt="img"
-        />
-        <div class="hidden flex-col justify-between items-center h-[200px]">
-          <p class="text-[16px] text-[#32313E]">
-            Lorem ipsum dolor sit amet consectetur. Dui sit dictum nibh duis.
-            Imperdiet turpis egestas gravida sit arcu lacus. Et malesuada dictum
-            amet risus iaculis tincidunt. Libero vitae euismod sit ultricies
-            turpis proin risus eget.
-          </p>
-          <div class="flex flex-col gap-2">
+          <div class="flex flex-col h-[30%]">
             <h1 class="text-[#40B75B] text-[22px]">Ahror Yusupov</h1>
             <p class="text-[#98999D] text-[21pxa]">CEO Apple</p>
           </div>
@@ -180,7 +164,7 @@
     </swiper-slide>
   </swiper>
   <div class="w-full flex justify-center items-center">
-    <div class="flex w-[10%] justify-between items-center">
+    <div class="flex w-[40%] lg:w-[10%] justify-between items-center">
       <button @click="prev" class="w-10 h-10 rounded-full bg-sky-600">
         <i class="bx bx-chevron-left text-white text-2xl"></i>
       </button>
@@ -209,6 +193,30 @@ export default {
     return {
       swiper,
       modules: [Pagination, Navigation],
+      swiperOptions: {
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          520: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+          },
+          770: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1350: {
+            slidesPerView: 5.3,
+            spaceBetween: 50,
+          },
+        },
+      },
     };
   },
   methods: {
@@ -226,6 +234,7 @@ export default {
 .swiper {
   width: 100%;
   height: 400px !important;
+  background: yellow;
 }
 
 .swiper-slide {
@@ -235,6 +244,15 @@ export default {
   justify-content: center;
   align-items: center;
   height: 400px !important;
+  background: red;
+}
+
+.swiper-slide > div > img {
+  margin-top: 20px;
+}
+
+.swiper-slide-active > div > img {
+  margin-top: 0px;
 }
 
 .swiper-slide {
@@ -252,15 +270,13 @@ export default {
 .swiper-slide-active > div {
   display: flex !important;
 }
-.swiper-slide-active > div > div {
-  display: flex;
-}
-
+v
 .swiper-slide-active > div > img {
   outline: 3px solid #40b75b;
   width: 110px !important;
 }
 .swiper-slide-active {
   width: 400px !important;
+  background: green;
 }
 </style>
