@@ -8,7 +8,7 @@ import Circle from "../Icons/Circle.vue";
       <div class="relative">
         <Plus class="top-4 -right-10 w-6 h-6" />
         <h1 class="text-[28px] lg:text-[34px] text-[#32313E] font-bold">
-          Our advantages
+          {{ $t("our_advantages") }}
         </h1>
       </div>
       <!--  -->
@@ -36,9 +36,11 @@ import Circle from "../Icons/Circle.vue";
           class="h-[727px] px-2 sm:px-4 lg:px-4 w-full lg:w-1/2 flex items-center"
         >
           <div class="h-2/3 lg:w-2/3 mx-auto flex flex-col justify-between">
-            <h1 class="text-[#32313E] text-[28px] font-bold">Buy online</h1>
+            <h1 class="text-[#32313E] text-[28px] font-bold">
+              {{ $t("advantages_1_h1") }}
+            </h1>
             <p class="text-[#545360] text-[16px]">
-              Преимущества покупок в интернете и какие удобства это дает вам!
+              {{ $t("advantages_1_p") }}
             </p>
             <ul
               class="h-[70%] flex flex-col text-[#545360] text-[16px] justify-between"
@@ -51,7 +53,7 @@ import Circle from "../Icons/Circle.vue";
                     alt="img"
                   />
                 </div>
-                <h1>Помогает сэкономить время</h1>
+                <h1>{{ $t("advantages_1_1") }}</h1>
               </li>
               <li class="flex items-center gap-5">
                 <div class="rounded-[16px] boxshadow p-5 bg-white">
@@ -61,7 +63,7 @@ import Circle from "../Icons/Circle.vue";
                     alt="img"
                   />
                 </div>
-                <h1>Использование службы доставки</h1>
+                <h1>{{ $t("advantages_1_2") }}</h1>
               </li>
               <li class="flex items-center gap-5">
                 <div class="rounded-[16px] boxshadow p-5 bg-white">
@@ -71,7 +73,7 @@ import Circle from "../Icons/Circle.vue";
                     alt="img"
                   />
                 </div>
-                <h1>Предварительный заказ лекарств</h1>
+                <h1>{{ $t("advantages_1_3") }}</h1>
               </li>
               <li class="flex items-center gap-5">
                 <div class="rounded-[16px] boxshadow p-5 bg-white">
@@ -81,7 +83,7 @@ import Circle from "../Icons/Circle.vue";
                     alt="img"
                   />
                 </div>
-                <h1>Подробная информация о препарате</h1>
+                <h1>{{ $t("advantages_1_4") }}</h1>
               </li>
             </ul>
           </div>
@@ -110,9 +112,11 @@ import Circle from "../Icons/Circle.vue";
           <div
             class="h-[400px] w-full lg:h-2/3 lg:w-2/3 flex flex-col justify-between"
           >
-            <h1 class="text-[#32313E] text-[28px] font-bold">Buy online</h1>
+            <h1 class="text-[#32313E] text-[28px] font-bold">
+              {{ $t("advantages_2_h1") }}
+            </h1>
             <p class="text-[#545360] text-[16px]">
-              Преимущества покупок в интернете и какие удобства это дает вам!
+              {{ $t("advantages_2_p") }}
             </p>
             <ul
               class="h-[70%] flex flex-col text-[#545360] text-[16px] justify-between"
@@ -125,7 +129,7 @@ import Circle from "../Icons/Circle.vue";
                     alt="img"
                   />
                 </div>
-                <h1>Помогает сэкономить время</h1>
+                <h1>{{ $t("advantages_2_1") }}</h1>
               </li>
               <li class="flex items-center gap-5">
                 <div class="rounded-[16px] boxshadow p-5 bg-white">
@@ -135,7 +139,7 @@ import Circle from "../Icons/Circle.vue";
                     alt="img"
                   />
                 </div>
-                <h1>Использование службы доставки</h1>
+                <h1>{{ $t("advantages_2_2") }}</h1>
               </li>
               <li class="flex items-center gap-5">
                 <div class="rounded-[16px] boxshadow p-5 bg-white">
@@ -145,7 +149,7 @@ import Circle from "../Icons/Circle.vue";
                     alt="img"
                   />
                 </div>
-                <h1>Предварительный заказ лекарств</h1>
+                <h1>{{ $t("advantages_2_3") }}</h1>
               </li>
               <li class="flex items-center gap-5">
                 <div class="rounded-[16px] boxshadow p-5 bg-white">
@@ -155,7 +159,7 @@ import Circle from "../Icons/Circle.vue";
                     alt="img"
                   />
                 </div>
-                <h1>Подробная информация о препарате</h1>
+                <h1>{{ $t("advantages_2_4") }}</h1>
               </li>
             </ul>
           </div>
@@ -175,7 +179,7 @@ import Circle from "../Icons/Circle.vue";
         </div>
       </div>
     </div>
-    <!--  -->
+    <!-- delivery -->
     <div class="w-full overflow-hidden">
       <div class="flex items-center h-full container justify-between flex-wrap">
         <!--  -->
@@ -198,6 +202,11 @@ import Circle from "../Icons/Circle.vue";
               src="../../assets/images/Kerfin7_NEA_2375 1.png"
               alt="img"
             />
+            <img
+            class="absolute bottom-[20%] left-[20%] w-[18%] sm:bottom-44 sm:left-24 md:bottom-44 sm:w-[80px] -rotate-[20deg] z-10 md:left-24"
+            src="../../assets/icons/Logo.svg"
+            alt="img"
+          />
           </div>
           <!--  -->
         </div>
@@ -205,9 +214,11 @@ import Circle from "../Icons/Circle.vue";
           class="h-[727px] px-2 sm:px-4 lg:px-4 flex items-center mx-auto lg:w-[45%]"
         >
           <div class="h-2/3 w-full lg:w-2/3 flex flex-col justify-between">
-            <h1 class="text-[#32313E] text-[28px] font-bold">Buy online</h1>
+            <h1 class="text-[#32313E] text-[28px] font-bold">
+              {{ $t("advantages_3_h1") }}
+            </h1>
             <p class="text-[#545360] text-[16px]">
-              Преимущества покупок в интернете и какие удобства это дает вам!
+              {{ $t("advantages_3_p") }}
             </p>
             <ul
               class="h-[70%] flex flex-col text-[#545360] text-[16px] justify-between"
@@ -220,7 +231,7 @@ import Circle from "../Icons/Circle.vue";
                     alt="img"
                   />
                 </div>
-                <h1>Помогает сэкономить время</h1>
+                <h1>{{ $t("advantages_3_1") }}</h1>
               </li>
               <li class="flex items-center gap-5">
                 <div class="rounded-[16px] boxshadow p-5 bg-white">
@@ -230,7 +241,7 @@ import Circle from "../Icons/Circle.vue";
                     alt="img"
                   />
                 </div>
-                <h1>Использование службы доставки</h1>
+                <h1>{{ $t("advantages_3_2") }}</h1>
               </li>
               <li class="flex items-center gap-5">
                 <div class="rounded-[16px] boxshadow p-5 bg-white">
@@ -240,7 +251,7 @@ import Circle from "../Icons/Circle.vue";
                     alt="img"
                   />
                 </div>
-                <h1>Предварительный заказ лекарств</h1>
+                <h1>{{ $t("advantages_3_3") }}</h1>
               </li>
               <li class="flex items-center gap-5">
                 <div class="rounded-[16px] boxshadow p-5 bg-white">
@@ -250,7 +261,7 @@ import Circle from "../Icons/Circle.vue";
                     alt="img"
                   />
                 </div>
-                <h1>Подробная информация о препарате</h1>
+                <h1>{{ $t("advantages_3_4") }}</h1>
               </li>
             </ul>
           </div>
@@ -266,9 +277,11 @@ import Circle from "../Icons/Circle.vue";
           <div
             class="h-2/3 lg:w-2/3 w-full px-2 sm:px-4 lg:px-4 flex flex-col justify-between"
           >
-            <h1 class="text-[#32313E] text-[28px] font-bold">Buy online</h1>
+            <h1 class="text-[#32313E] text-[28px] font-bold">
+              {{ $t("advantages_4_h1") }}
+            </h1>
             <p class="text-[#545360] text-[16px]">
-              Преимущества покупок в интернете и какие удобства это дает вам!
+              {{ $t("advantages_4_p") }}
             </p>
             <ul
               class="h-[70%] flex flex-col text-[#545360] text-[16px] justify-between"
@@ -281,7 +294,7 @@ import Circle from "../Icons/Circle.vue";
                     alt="img"
                   />
                 </div>
-                <h1>Помогает сэкономить время</h1>
+                <h1>{{ $t("advantages_4_1") }}</h1>
               </li>
               <li class="flex items-center gap-5">
                 <div class="rounded-[16px] boxshadow p-5 bg-white">
@@ -291,7 +304,7 @@ import Circle from "../Icons/Circle.vue";
                     alt="img"
                   />
                 </div>
-                <h1>Использование службы доставки</h1>
+                <h1>{{ $t("advantages_4_2") }}</h1>
               </li>
               <li class="flex items-center gap-5">
                 <div class="rounded-[16px] boxshadow p-5 bg-white">
@@ -301,7 +314,7 @@ import Circle from "../Icons/Circle.vue";
                     alt="img"
                   />
                 </div>
-                <h1>Предварительный заказ лекарств</h1>
+                <h1>{{ $t("advantages_4_3") }}</h1>
               </li>
               <li class="flex items-center gap-5">
                 <div class="rounded-[16px] boxshadow p-5 bg-white">
@@ -311,7 +324,7 @@ import Circle from "../Icons/Circle.vue";
                     alt="img"
                   />
                 </div>
-                <h1>Подробная информация о препарате</h1>
+                <h1>{{ $t("advantages_4_4") }}</h1>
               </li>
             </ul>
           </div>
@@ -349,15 +362,14 @@ import Circle from "../Icons/Circle.vue";
           class="flex px-2 sm:px-4 lg:px-4 h-[300px] flex-col justify-between items-center lg:items-stretch w-full lg:w-1/3"
         >
           <h1 class="hidden lg:block text-[#32313E] text-[34px] font-bold">
-            Мобильные приложения Pharm Live
+            {{ $t("advantages_5_h1") }}
           </h1>
           <p class="hidden lg:block text-[#545360] text-[16px]">
-            Мобильное приложение Pharm Live вы можете заказать необходимое
-            лекарство, не выходя из дома!
+            {{ $t("advantages_5_p") }}
           </p>
           <div class="h-[30%] flex flex-col gap-4">
             <p class="text-[#545360] text-[16px]">
-              Скачать через Play Market или App Store!
+              {{ $t("advantages_5_p2") }}
             </p>
             <div
               class="flex items-center lg:flex-row flex-col gap-4 text-white"
@@ -407,11 +419,10 @@ import Circle from "../Icons/Circle.vue";
 
         <div class="h-40 flex px-2 sm:px-4 lg:px-4 flex-col gap-5">
           <h1 class="lg:hidden text-[#32313E] text-[34px] font-bold">
-            Мобильные приложения Pharm Live
+            {{ $t("advantages_5_h1") }}
           </h1>
           <p class="block lg:hidden text-[#545360] text-[16px]">
-            Мобильное приложение Pharm Live вы можете заказать необходимое
-            лекарство, не выходя из дома!
+            {{ $t("advantages_5_p") }}
           </p>
         </div>
       </div>

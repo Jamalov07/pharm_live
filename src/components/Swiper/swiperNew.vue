@@ -1,7 +1,7 @@
 <template>
   <div class="pt-4 sm:pt-12 flex flex-col gap-4 items-center">
     <swiper
-      :slides-per-view="3"
+      :slides-per-view="1"
       :space-between="20"
       :cssMode="true"
       :navigation="true"
@@ -10,7 +10,7 @@
       :keyboard="true"
       :modules="modules"
       :breakpoints="swiperOptions.breakpoints"
-      class="mySwiper h-[400px] lg:h-[350px]"
+      class="mySwiper h-[400px] sm:h-[360px] md:h-[360px] lg:h-[350px]"
     >
       <swiper-slide class="hidden lg:block">
         <div
@@ -37,13 +37,17 @@
       </swiper-slide>
       <!--  -->
       <swiper-slide>
-        <div class="flex h-full gap-4 flex-col justify-between items-center p-2">
+        <div
+          class="flex h-full gap-4 flex-col justify-between items-center p-2"
+        >
           <img
-            src="../../assets/images/Ellipse 42 (1).png"
+            src="../../assets/images/Ellipse 42.png"
             class="p-1 rounded-full"
             alt="img"
           />
-          <div class="hidden flex-col justify-between items-center gap-8 h-[200px]">
+          <div
+            class="hidden flex-col justify-between items-center gap-8 h-[200px]"
+          >
             <p class="text-[16px] text-[#32313E]">
               Lorem ipsum dolor sit amet consectetur. Dui sit dictum nibh duis.
               Imperdiet turpis egestas gravida sit arcu lacus. Et malesuada
@@ -58,13 +62,17 @@
         </div>
       </swiper-slide>
       <swiper-slide>
-        <div class="flex h-full gap-4 flex-col justify-between items-center p-2">
+        <div
+          class="flex h-full gap-4 flex-col justify-between items-center p-2"
+        >
           <img
             src="../../assets/images/Ellipse 42 (1).png"
             class="p-1 rounded-full"
             alt="img"
           />
-          <div class="hidden flex-col justify-between items-center gap-8 h-[200px]">
+          <div
+            class="hidden flex-col justify-between items-center gap-8 h-[200px]"
+          >
             <p class="text-[16px] text-[#32313E]">
               Lorem ipsum dolor sit amet consectetur. Dui sit dictum nibh duis.
               Imperdiet turpis egestas gravida sit arcu lacus. Et malesuada
@@ -79,13 +87,17 @@
         </div>
       </swiper-slide>
       <swiper-slide>
-        <div class="flex h-full gap-4 flex-col justify-between items-center p-2">
+        <div
+          class="flex h-full gap-4 flex-col justify-between items-center p-2"
+        >
           <img
-            src="../../assets/images/Ellipse 42 (1).png"
+            src="../../assets/images/Ellipse 42 (2).png"
             class="p-1 rounded-full"
             alt="img"
           />
-          <div class="hidden flex-col justify-between items-center gap-8 h-[200px]">
+          <div
+            class="hidden flex-col justify-between items-center gap-8 h-[200px]"
+          >
             <p class="text-[16px] text-[#32313E]">
               Lorem ipsum dolor sit amet consectetur. Dui sit dictum nibh duis.
               Imperdiet turpis egestas gravida sit arcu lacus. Et malesuada
@@ -100,13 +112,17 @@
         </div>
       </swiper-slide>
       <swiper-slide>
-        <div class="flex h-full gap-4 flex-col justify-between items-center p-2">
+        <div
+          class="flex h-full gap-4 flex-col justify-between items-center p-2"
+        >
           <img
-            src="../../assets/images/Ellipse 42 (1).png"
+            src="../../assets/images/Ellipse 42 (3).png"
             class="p-1 rounded-full"
             alt="img"
           />
-          <div class="hidden flex-col justify-between items-center gap-8 h-[200px]">
+          <div
+            class="hidden flex-col justify-between items-center gap-8 h-[200px]"
+          >
             <p class="text-[16px] text-[#32313E]">
               Lorem ipsum dolor sit amet consectetur. Dui sit dictum nibh duis.
               Imperdiet turpis egestas gravida sit arcu lacus. Et malesuada
@@ -121,34 +137,17 @@
         </div>
       </swiper-slide>
       <swiper-slide>
-        <div class="flex h-full gap-4 flex-col justify-between items-center p-2">
+        <div
+          class="flex h-full gap-4 flex-col justify-between items-center p-2"
+        >
           <img
-            src="../../assets/images/Ellipse 42 (1).png"
+            src="../../assets/images/Ellipse 42 (4).png"
             class="p-1 rounded-full"
             alt="img"
           />
-          <div class="hidden flex-col justify-between items-center gap-8 h-[200px]">
-            <p class="text-[16px] text-[#32313E]">
-              Lorem ipsum dolor sit amet consectetur. Dui sit dictum nibh duis.
-              Imperdiet turpis egestas gravida sit arcu lacus. Et malesuada
-              dictum amet risus iaculis tincidunt. Libero vitae euismod sit
-              ultricies turpis proin risus eget.
-            </p>
-            <div class="flex flex-col h-[30%]">
-              <h1 class="text-[#40B75B] text-[22px]">Ahror Yusupov</h1>
-              <p class="text-[#98999D] text-[21pxa]">CEO Apple</p>
-            </div>
-          </div>
-        </div>
-      </swiper-slide>
-       <swiper-slide>
-        <div class="flex h-full gap-4 flex-col justify-between items-center p-2">
-          <img
-            src="../../assets/images/Ellipse 42 (1).png"
-            class="p-1 rounded-full"
-            alt="img"
-          />
-          <div class="hidden flex-col justify-between items-center gap-8 h-[200px]">
+          <div
+            class="hidden flex-col justify-between items-center gap-8 h-[200px]"
+          >
             <p class="text-[16px] text-[#32313E]">
               Lorem ipsum dolor sit amet consectetur. Dui sit dictum nibh duis.
               Imperdiet turpis egestas gravida sit arcu lacus. Et malesuada
@@ -188,11 +187,19 @@
       </swiper-slide>
     </swiper>
     <div class="w-full flex justify-center items-center">
-      <div class="flex w-[40%] lg:w-[10%] justify-between items-center">
-        <button @click="prev" class="w-10 h-10 rounded-full bg-sky-600">
-          <i class="bx bx-chevron-left text-white text-2xl"></i>
+      <div
+        class="flex w-[20%] sm:w-[16%] md:w-[20%] lg:w-[10%] justify-between items-center"
+      >
+        <button
+          @click="prev"
+          class="w-10 h-10 rounded-full border border-[#40b75b] bg-white"
+        >
+          <i class="bx bx-chevron-left text-[#40b75b] text-2xl"></i>
         </button>
-        <button @click="next" class="w-10 h-10 rounded-full bg-sky-600">
+        <button
+          @click="next"
+          class="w-10 h-10 rounded-full border border-white bg-[#40b75b]"
+        >
           <i class="bx bx-chevron-right text-white text-2xl"></i>
         </button>
       </div>
@@ -266,9 +273,14 @@ export default {
 .swiper-slide {
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 320px;
 }
 
+.swiper-slide > div > img {
+  width: 80px;
+  cursor: pointer;
+}
 .swiper-button-prev,
 .swiper-button-next {
   display: none;
@@ -277,11 +289,6 @@ export default {
 .swiper-slide-next > div > img {
   outline: 3px solid #40b75b;
   width: 110px !important;
-}
-
-
-.swiper-slide-next {
-  width: 400px!important;
 }
 
 .swiper-slide-active > div {

@@ -10,12 +10,10 @@
           <img src="../../assets/icons/Logo.svg" alt="logo" />
         </div>
         <div class="text-[#32313E] text-[28px] lg:text-[34px] font-bold">
-          Lorem ipsum dolor sit amet consectetur. Ligula rhoncus sit id vel sed
-          etiam ultricies. Id ac et odio nisi.
+          {{ $t("intro_h1") }}
         </div>
         <p class="text-[#545360] text-[16px]">
-          Lorem ipsum dolor sit amet consectetur. Ligula rhoncus sit id vel sed
-          etiam ultricies. Id ac et odio nisi.
+          {{ $t("intro_p") }}
         </p>
       </div>
     </div>
@@ -25,35 +23,35 @@
       >
         <div class="flex flex-col items-center">
           <h1 class="text-[#40B75B] text-[28px] font-bold">11 056 +</h1>
-          <p class="text-[#545360] text-[15px]">medicine</p>
+          <p class="text-[#545360] text-[15px]">{{ $t("medicine") }}</p>
         </div>
         <hr
           class="w-[120px] md:w-[70px] h-[2px] rotate-0 md:rotate-90 bg-[#E5F0EF] border-[#E5F0EF]"
         />
         <div class="flex flex-col items-center">
           <h1 class="text-[#40B75B] text-[28px] font-bold">3 654 +</h1>
-          <p class="text-[#545360] text-[15px]">customers</p>
+          <p class="text-[#545360] text-[15px]">{{ $t("customers") }}</p>
         </div>
         <hr
           class="w-[120px] md:w-[70px] h-[2px] rotate-0 md:rotate-90 bg-[#E5F0EF] border-[#E5F0EF]"
         />
         <div class="flex flex-col items-center">
           <h1 class="text-[#40B75B] text-[28px] font-bold">11</h1>
-          <p class="text-[#545360] text-[15px]">filials</p>
+          <p class="text-[#545360] text-[15px]">{{ $t("filials") }}</p>
         </div>
         <hr
           class="w-[120px] md:w-[70px] h-[2px] rotate-0 md:rotate-90 bg-[#E5F0EF] border-[#E5F0EF]"
         />
         <div class="flex flex-col items-center">
           <h1 class="text-[#40B75B] text-[28px] font-bold">24/7</h1>
-          <p class="text-[#545360] text-[15px]">working time</p>
+          <p class="text-[#545360] text-[15px]">{{ $t("working_time") }}</p>
         </div>
         <hr
           class="w-[120px] md:w-[70px] h-[2px] rotate-0 md:rotate-90 bg-[#E5F0EF] border-[#E5F0EF]"
         />
         <div class="flex flex-col items-center">
           <h1 class="text-[#40B75B] text-[28px] font-bold">1%</h1>
-          <p class="text-[#545360] text-[15px]">cashback</p>
+          <p class="text-[#545360] text-[15px]">{{ $t("cashback") }}</p>
         </div>
       </div>
     </div>

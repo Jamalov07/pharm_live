@@ -1,10 +1,27 @@
 <script setup>
 import { ref } from "vue";
+const { t, locale } = useI18n({ useScope: "global" });
+import { useI18n } from "vue-i18n";
 
 let isMenuOpen = ref(false);
-
+const select = ref("" || localStorage.getItem("lang"));
 function toggleModal() {
   isMenuOpen.value = !isMenuOpen.value;
+}
+
+const switchLang = () => {
+  locale.value = select.value;
+  localStorage.setItem("lang", select.value);
+};
+
+function updateLang(lang) {
+  locale.value = lang;
+  select.value = lang;
+  localStorage.setItem("lang", select.value);
+}
+
+function check(lang) {
+return localStorage.getItem("lang") === lang;
 }
 </script>
 <template>
@@ -12,20 +29,22 @@ function toggleModal() {
     <div class="container h-[70px]">
       <nav class="flex justify-between items-center text-[15px] font-[Roboto]">
         <div class="py-[10px]">
-          <img src="../../assets/icons/Logo.svg" alt="logo" />
+          <router-link to="/">
+            <img src="../../assets/icons/Logo.svg" alt="logo" />
+          </router-link>
         </div>
         <ul class="hidden lg:flex justify-between w-[30%] text-[#545360]">
           <li>
-            <router-link to="/"> Advantages </router-link>
+            <router-link to="/"> {{ $t("advantages") }} </router-link>
           </li>
           <li>
-            <router-link to="/about">About us</router-link>
+            <router-link to="/about">{{ $t("about_us") }}</router-link>
           </li>
           <li>
-            <router-link to="/comments"> Comments </router-link>
+            <router-link to="/comments"> {{ $t("comments") }} </router-link>
           </li>
           <li>
-            <router-link to="/contacts"> Contacts </router-link>
+            <router-link to="/contacts"> {{ $t("contacts") }} </router-link>
           </li>
         </ul>
         <div class="hidden lg:flex justify-between items-center">
@@ -49,20 +68,22 @@ function toggleModal() {
 
           <div class="w-[114px] py-[14px] px-[20px]">
             <select
+              @change="switchLang"
+              v-model="select"
               name="langs"
               id="langs"
-              class="border-0 ring-0 focus:ring-0 text-[#40B75B]"
+              class="border-0 cursor-pointer ring-0 focus:ring-0 text-[#40B75b] p-2"
             >
-              <option value="uz">Uz</option>
-              <option value="eng" :selected="true">Eng</option>
-              <option value="ru">
-                <div>Ru</div>
+              <option :selected="check('uz')" value="uz">{{ $t("uz") }}</option>
+              <option :selected="check('en')" value="en">{{ $t("en") }}</option>
+              <option :selected="check('ru')" value="ru">
+                <div>{{ $t("ru") }}</div>
               </option>
             </select>
           </div>
         </div>
         <div
-          class="bg-[#40B75B] my-[10px] flex lg:hidden justify-center items-center rounded-md"
+          class="cursor-pointer bg-[#40B75B] my-[10px] flex lg:hidden justify-center items-center rounded-md"
         >
           <i
             v-if="!isMenuOpen"
@@ -80,28 +101,36 @@ function toggleModal() {
   </div>
   <div
     :class="[isMenuOpen ? 'block' : 'hidden']"
-    class="h-[300px] w-full bg-white fixed top-[70px] z-40"
+    class="h-[340px] lg:hidden w-full bg-white fixed top-[70px] z-40 font-[Roboto]"
   >
     <div class="flex justify-center items-center">
-      <div class="flex flex-col gap-4">
+      <div class="flex flex-col gap-6">
         <ul
-          class="flex flex-col gap-3 justify-between items-center text-[#545360]"
+          class="flex flex-col gap-6 justify-between items-center text-[#545360]"
         >
           <li>
-            <router-link to="/"> Advantages </router-link>
+            <router-link @click="(e) => (isMenuOpen = false)" to="/">
+              {{ $t("advantages") }}
+            </router-link>
           </li>
           <li>
-            <router-link to="/about">About us</router-link>
+            <router-link @click="(e) => (isMenuOpen = false)" to="/about">{{
+              $t("about_us")
+            }}</router-link>
           </li>
           <li>
-            <router-link to="/comments"> Comments </router-link>
+            <router-link @click="(e) => (isMenuOpen = false)" to="/comments">
+              {{ $t("comments") }}
+            </router-link>
           </li>
           <li>
-            <router-link to="/contacts"> Contacts </router-link>
+            <router-link @click="(e) => (isMenuOpen = false)" to="/contacts">
+              {{ $t("contacts") }}
+            </router-link>
           </li>
         </ul>
         <button
-          class="rounded-[30px] bg-[#40B75B] py-[14px] px-[20px] text-white flex justify-between items-center w-[166px] h-[48px]"
+          class="rounded-[30px] mx-auto bg-[#40B75B] py-[14px] px-[20px] text-white flex justify-between items-center w-[166px] h-[48px]"
         >
           <svg
             width="20"
@@ -118,18 +147,53 @@ function toggleModal() {
           <p>(71) 200 0707</p>
         </button>
 
-        <div class="w-full flex justify-between text-[#32313E] text-[16px]">
-          <label for="uz" class="flex items-center gap-2">
-            <p>Ru</p>
-            <input type="checkbox" name="" id="" />
+        <div
+          class="w-full flex justify-between text-[#32313E] text-[16px] gap-10"
+        >
+          <label
+            for="ru"
+            @click="updateLang('ru')"
+            class="flex cursor-pointer items-center gap-2"
+          >
+            <p>{{ $t("ru") }}</p>
+            <div
+              class="w-4 h-4 rounded-full border border-[#40b75b] flex justify-center items-center"
+            >
+              <div
+                :class="[check('ru') ? 'block' : 'hidden']"
+                class="rounded-full h-[10px] w-[10px] bg-[#40b75b]"
+              ></div>
+            </div>
           </label>
-          <label for="uz" class="flex items-center gap-2">
-            <p>Uz</p>
-            <input type="checkbox" name="" id="" />
+          <label
+            for="en"
+            @click="updateLang('en')"
+            class="flex items-center cursor-pointer gap-2"
+          >
+            <p>{{ $t("en") }}</p>
+            <div
+              class="w-4 h-4 rounded-full border border-[#40b75b] flex justify-center items-center"
+            >
+              <div
+                :class="[check('en') ? 'block' : 'hidden']"
+                class="rounded-full h-[10px] w-[10px] bg-[#40b75b]"
+              ></div>
+            </div>
           </label>
-          <label for="uz" class="flex items-center gap-2">
-            <p>Eng</p>
-            <input type="checkbox" name="" id="" />
+          <label
+            @click="updateLang('uz')"
+            for="uz"
+            class="flex cursor-pointer items-center gap-2"
+          >
+            <p>{{ $t("uz") }}</p>
+            <div
+              class="w-4 h-4 rounded-full border border-[#40b75b] flex justify-center items-center"
+            >
+              <div
+                :class="[check('uz') ? 'block' : 'hidden']"
+                class="rounded-full h-[10px] w-[10px] bg-[#40b75b]"
+              ></div>
+            </div>
           </label>
         </div>
       </div>
