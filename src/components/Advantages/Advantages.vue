@@ -170,7 +170,7 @@ import Circle from "../Icons/Circle.vue";
           <Circle class="w-5 h-5 top-40 lg:top-28 left-4 lg:left-28" />
           <img
             class="h-[500px] lg:h-auto w-[500px] md:w-auto object-cover"
-            src="../../assets/images/iPhone 13 Pro.png"
+            src="../../assets/images/iPhone13Pro.png"
             alt=""
           />
           <Circle class="bottom-10 lg:bottom-16 right-60 lg:right-40 w-3 h-3" />
@@ -190,23 +190,23 @@ import Circle from "../Icons/Circle.vue";
               <img src="../../assets/images/Card.png" alt="" />
             </div>
             <div class="absolute left-[15%] top-[24%]">
-              <img src="../../assets/images/Card (1).png" alt="" />
+              <img src="../../assets/images/Card(1).png" alt="" />
             </div>
             <div class="absolute left-[20%] top-[34%]">
-              <img src="../../assets/images/Frame 8.png" alt="" />
+              <img src="../../assets/images/Frame8.png" alt="" />
             </div>
           </div>
           <div class="bike2">
             <img
               class="absolute bottom-0 z-10 left-10"
-              src="../../assets/images/Kerfin7_NEA_2375 1.png"
+              src="../../assets/images/Kerfin7_NEA_23751.png"
               alt="img"
             />
             <img
-            class="absolute bottom-[20%] left-[20%] w-[18%] sm:bottom-44 sm:left-24 md:bottom-44 sm:w-[80px] -rotate-[20deg] z-10 md:left-24"
-            src="../../assets/icons/Logo.svg"
-            alt="img"
-          />
+              class="absolute bottom-[20%] left-[20%] w-[18%] sm:bottom-44 sm:left-24 md:bottom-44 sm:w-[80px] -rotate-[20deg] z-10 md:left-24"
+              src="../../assets/icons/Logo.svg"
+              alt="img"
+            />
           </div>
           <!--  -->
         </div>
@@ -335,7 +335,7 @@ import Circle from "../Icons/Circle.vue";
           ></div>
           <img
             class="absolute top-20 right-2 md:right-[20%] lg:right-44 z-20 h-[500px] w-[240px]"
-            src="../../assets/images/MockUp (3).png"
+            src="../../assets/images/MockUp(3).png"
             alt="img"
           />
 
@@ -344,11 +344,11 @@ import Circle from "../Icons/Circle.vue";
           ></div>
           <img
             class="absolute top-48 left-2 md:left-[20%] lg:left-0 z-20 h-[500px] w-[240px]"
-            src="../../assets/images/MockUp (3).png"
+            src="../../assets/images/MockUp(3).png"
             alt="img"
           />
           <div class="absolute top-96 left-2 md:left-[12%] lg:-left-20 z-40">
-            <img src="../../assets/images/Frame 754.png" alt="img" />
+            <img src="../../assets/images/Frame754.png" alt="img" />
           </div>
         </div>
       </div>
@@ -412,7 +412,7 @@ import Circle from "../Icons/Circle.vue";
 
           <img
             class="w-full h-auto lg:h-[500px] absolute bottom-0"
-            src="../../assets/images/iPhone 12 Pro (Wooden Hands).png"
+            src="../../assets/images/iPhone12Pro(Wooden Hands).png"
             alt=""
           />
         </div>

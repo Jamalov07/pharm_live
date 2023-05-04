@@ -18,7 +18,7 @@
     <swiper-slide>
       <div class="flex h-full flex-col justify-between items-center p-2">
         <img
-          src="../../assets/images/Ellipse 42 (1).png"
+          src="../../assets/images/Ellipse42(1).png"
           class="p-1 rounded-full"
           alt="img"
         />
@@ -39,7 +39,7 @@
     <swiper-slide>
       <div class="flex h-full flex-col justify-between items-center p-2">
         <img
-          src="../../assets/images/Ellipse 42 (1).png"
+          src="../../assets/images/Ellipse42(1).png"
           class="p-1 rounded-full"
           alt="img"
         />
@@ -60,7 +60,7 @@
     <swiper-slide>
       <div class="flex h-full flex-col justify-between items-center p-2">
         <img
-          src="../../assets/images/Ellipse 42 (1).png"
+          src="../../assets/images/Ellipse42(1).png"
           class="p-1 rounded-full"
           alt="img"
         />
@@ -81,7 +81,7 @@
     <swiper-slide>
       <div class="flex h-full flex-col justify-between items-center p-2">
         <img
-          src="../../assets/images/Ellipse 42 (1).png"
+          src="../../assets/images/Ellipse42(1).png"
           class="p-1 rounded-full"
           alt="img"
         />
@@ -102,7 +102,7 @@
     <swiper-slide>
       <div class="flex h-full flex-col justify-between items-center p-2">
         <img
-          src="../../assets/images/Ellipse 42 (1).png"
+          src="../../assets/images/Ellipse42(1).png"
           class="p-1 rounded-full"
           alt="img"
         />
@@ -123,7 +123,7 @@
     <swiper-slide>
       <div class="flex h-full flex-col justify-between items-center p-2">
         <img
-          src="../../assets/images/Ellipse 42 (1).png"
+          src="../../assets/images/Ellipse42(1).png"
           class="p-1 rounded-full"
           alt="img"
         />
@@ -144,7 +144,7 @@
     <swiper-slide>
       <div class="flex h-full flex-col justify-between items-center p-2">
         <img
-          src="../../assets/images/Ellipse 42 (1).png"
+          src="../../assets/images/Ellipse42(1).png"
           class="p-1 rounded-full"
           alt="img"
         />
@@ -270,7 +270,10 @@ export default {
 .swiper-slide-active > div {
   display: flex !important;
 }
-v
+.swiper-slide-active > div > div {
+  display: flex;
+}
+
 .swiper-slide-active > div > img {
   outline: 3px solid #40b75b;
   width: 110px !important;

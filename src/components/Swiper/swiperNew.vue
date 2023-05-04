@@ -17,7 +17,7 @@
           class="flex opacity-0 h-full flex-col justify-between items-center p-2"
         >
           <img
-            src="../../assets/images/Ellipse 42 (1).png"
+            src="../../assets/images/Ellipse42(1).png"
             class="p-1 rounded-full"
             alt="img"
           />
@@ -41,7 +41,7 @@
           class="flex h-full gap-4 flex-col justify-between items-center p-2"
         >
           <img
-            src="../../assets/images/Ellipse 42.png"
+            src="../../assets/images/Ellipse42.png"
             class="p-1 rounded-full"
             alt="img"
           />
@@ -66,7 +66,7 @@
           class="flex h-full gap-4 flex-col justify-between items-center p-2"
         >
           <img
-            src="../../assets/images/Ellipse 42 (1).png"
+            src="../../assets/images/Ellipse42(1).png"
             class="p-1 rounded-full"
             alt="img"
           />
@@ -91,7 +91,7 @@
           class="flex h-full gap-4 flex-col justify-between items-center p-2"
         >
           <img
-            src="../../assets/images/Ellipse 42 (2).png"
+            src="../../assets/images/Ellipse42(2).png"
             class="p-1 rounded-full"
             alt="img"
           />
@@ -116,7 +116,7 @@
           class="flex h-full gap-4 flex-col justify-between items-center p-2"
         >
           <img
-            src="../../assets/images/Ellipse 42 (3).png"
+            src="../../assets/images/Ellipse42(3).png"
             class="p-1 rounded-full"
             alt="img"
           />
@@ -141,7 +141,7 @@
           class="flex h-full gap-4 flex-col justify-between items-center p-2"
         >
           <img
-            src="../../assets/images/Ellipse 42 (4).png"
+            src="../../assets/images/Ellipse42(4).png"
             class="p-1 rounded-full"
             alt="img"
           />
@@ -167,7 +167,7 @@
           class="flex h-full opacity-0 flex-col justify-between items-center p-2"
         >
           <img
-            src="../../assets/images/Ellipse 42 (1).png"
+            src="../../assets/images/Ellipse42(1).png"
             class="p-1 rounded-full"
             alt="img"
           />
